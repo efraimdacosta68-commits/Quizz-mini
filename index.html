@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quiz 50 Soal — Pengetahuan Umum</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="topbar">
+        <h1>Quiz Pengetahuan Umum — 50 Soal</h1>
+        <div class="meta">
+          <div id="timer" class="timer">01:00</div>
+          <div id="best" class="best">Best: -</div>
+        </div>
+      </header>
+
+      <section id="card" class="card">
+        <!-- Question will be injected here -->
+      </section>
+
+      <nav class="controls">
+        <button id="prev" class="btn ghost">Sebelumnya</button>
+        <button id="skip" class="btn secondary">Lewati</button>
+        <button id="next" class="btn primary">Jawab & Lanjut</button>
+      </nav>
+
+      <footer class="footer">
+        <div id="progress" class="progress"><span id="progressBar"></span></div>
+        <div class="share">
+          <button id="finish" class="btn danger">Selesai</button>
+          <button id="share" class="btn ghost">Bagikan (WhatsApp)</button>
+        </div>
+      </footer>
+    </main>
+
+    <div id="resultModal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Hasilmu</h2>
+        <p id="resultText"></p>
+        <div class="modal-actions">
+          <button id="retry" class="btn secondary">Main Lagi</button>
+          <button id="close" class="btn ghost">Tutup</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
